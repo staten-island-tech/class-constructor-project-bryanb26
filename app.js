@@ -43,31 +43,25 @@ class UI {
 }
         
 
-       document.getElementById('teacher-form').addEventListener('submit', function(e) {
-        const name = document.getElementById('name').value;
-        const subject = document.getElementById('subject').value;
-        const firstYear = document.getElementById('firstYear').value;
-     
-    
-        const teacher = new Teacher(name, subject, firstYear);
-
-
-    
-        const ui = new UI();
-        console.log(ui);
-        if(name === '' || subject === '' ||  firstYear === '' ) {
-            alert ('Oops it seems like you have left something blank!'); 
-        } else {
+document.getElementById('teacher-form').addEventListener('submit', function(e) {
+    const name = document.getElementById('name').value;
+    const subject = document.getElementById('subject').value;
+    const firstYear = document.getElementById('firstYear').value;
+    const teacher = new Teacher(name, subject, firstYear);
+    const ui = new UI();
+    if(name === '' || subject === '' ||  firstYear === '' ) {
+        alert ('Oops it seems like you have left something blank!'); 
+    } else {
         ui.addTeacherToList(teacher);
         ui.clearFields();
-        }
+    }
 
-        e.preventDefault();
-    });
+    e.preventDefault();
+});
     
-    document.querySelector(".display").addEventListener("click", function(e){
-        const ui = new UI();
-        ui.deleteTeacher(e.target);
-        ui.clearFields();
-        e.preventDefault();
-    });
+document.querySelector(".display").addEventListener("click", function(e){
+    const ui = new UI();
+    ui.deleteTeacher(e.target);
+    ui.clearFields();
+     e.preventDefault();
+});
