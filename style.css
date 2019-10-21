@@ -1,0 +1,107 @@
+html{
+    font-size: 62.5%;
+    background-color: lightyellow;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;    
+}
+
+.banner{
+    text-align:center;
+    margin: 2rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:lightskyblue;
+    color:hotpink;
+    height:18vh;
+    text-transform:uppercase;
+    letter-spacing:1rem;
+    font-size:4rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+#teacher-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 60vh;
+    font-size: 2.2rem; 
+}
+
+
+.text-box{
+    height:2.5rem;
+    width: 20rem;
+
+}
+.teacher-form-input{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:1rem;
+    height: 10vh;
+
+}
+
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4.0rem;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+.btn:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1.0rem 2rem rgba(0,0,0.2);  
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0.2);
+}
+ 
+.btn-red{
+    background-color: white;
+    color:black;
+}
+
+.display{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 10rem;
+    font-size:2.2rem;
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+.display-teacher{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 10rem;
+    font-size: 2.2rem;
+    width: 80vw;
+    font-family: 'Josefin Sans', sans-serif;  
+}
+
